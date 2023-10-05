@@ -7,6 +7,8 @@ You can run this either by using docker:
 
 docker run --rm -it $(docker build -q .) <IP_ADDRESS>
 
+e.g. docker run --rm -it $(docker build -q .) 51.198.13.45
+
 Or pip installing requirements.txt
 
 pip install -r requirements.txt

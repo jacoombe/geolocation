@@ -11,6 +11,10 @@ import requests
 
 
 def get_ip_data(ip_address: str, key: str):
+    """A basic function to get information from ipstack.com
+    :param ip_address: The IP address to search for
+    :param key: the API Key to use
+    """
     data = requests.get(
         f'http://api.ipstack.com/{ip_address}?access_key={key}'
     )
@@ -52,7 +56,7 @@ if __name__ == '__main__':
     info = get_ip_data(ip_text, api_key)
 
     if 'error' in info:
-        ec  = info['error']['code']
+        ec = info['error']['code']
         print(f"error {ec} from ipstack.com: {info['error']['info']}")
         sys.exit(ec)
 
