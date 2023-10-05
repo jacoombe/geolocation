@@ -52,7 +52,9 @@ if __name__ == '__main__':
     info = get_ip_data(ip_text, api_key)
 
     if 'error' in info:
-        sys.exit(info['error']['code'])
+        ec  = info['error']['code']
+        print(f"error {ec} from ipstack.com: {info['error']['info']}")
+        sys.exit(ec)
 
     print(info['latitude'])
     print(info['longitude'])
