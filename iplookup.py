@@ -51,5 +51,8 @@ if __name__ == '__main__':
 
     info = get_ip_data(ip_text, api_key)
 
+    if 'error' in info:
+        sys.exit(info['error']['code'])
+
     print(info['latitude'])
     print(info['longitude'])
