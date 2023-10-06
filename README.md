@@ -23,7 +23,11 @@ Or pip installing requirements.txt
 pip install -r requirements.txt
 ```
 
-Followed by running the script: ./iplookup.py 51.198.13.45
+Followed by running the script:
+
+```
+./iplookup.py 51.198.13.45
+```
 
 In addition to the error codes documented here https://ipstack.com/documentation#errors
 
