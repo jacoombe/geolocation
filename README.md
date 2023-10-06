@@ -5,19 +5,23 @@ this is a simple tool that gets geographical location information about an ip ad
 Firstly create a .apikey file in the same directory as this readme. the files shoul include only the API key generated from ipstack.com
 You can run this either by using docker:
 
+```
 docker run --rm -it $(docker build -q .) <IP_ADDRESS>
+```
 
 e.g. 
 
-'''
+```
 docker run --rm -it $(docker build -q .) 51.198.13.45
 
 51.5122184753418 0.0
-'''
+```
 
 Or pip installing requirements.txt
 
+```
 pip install -r requirements.txt
+```
 
 Followed by running the script: ./iplookup.py 51.198.13.45
 
