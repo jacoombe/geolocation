@@ -60,5 +60,4 @@ if __name__ == '__main__':
         print(f"error {ec} from ipstack.com: {info['error']['info']}")
         sys.exit(ec)
 
-    print(info['latitude'])
-    print(info['longitude'])
+    print(f"{info['latitude']} {info['longitude']}")
