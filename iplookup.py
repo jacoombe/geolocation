@@ -10,10 +10,11 @@ import sys
 import requests
 
 
-def get_ip_data(ip_address: str, key: str):
+def get_ip_data(ip_address: str, key: str) -> dict:
     """A basic function to get information from ipstack.com
     :param ip_address: The IP address to search for
     :param key: the API Key to use
+    :returns: The data from IP Stack
     """
     data = requests.get(
         f'http://api.ipstack.com/{ip_address}?access_key={key}'
